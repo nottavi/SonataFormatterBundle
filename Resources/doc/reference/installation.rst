@@ -58,3 +58,14 @@ Edit the ``config.yml`` file and add:
             twig:
                 service: sonata.formatter.text.twigengine
                 extensions: [] # Twig formatter cannot have extensions
+    
+    
+    # Twig Configuration
+    twig:
+        debug:            "%kernel.debug%"
+        strict_variables: "%kernel.debug%"
+
+        #sonata
+        form:
+            resources:
+                - 'SonataFormatterBundle:Form:formatter.html.twig'
